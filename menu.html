@@ -1,0 +1,2810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>قائمة الطعام</title>
+</head>
+<body>
+  <div class="wats-icon">
+    <a href="https://api.whatsapp.com/send?phone=966507001669" target="_blank"><img src="images/whatsapp.png" width="60" alt="" ></a>
+  </div>
+  <header class="w-100 position-relative ">
+    <div class="loader">
+      <img src="images/logo-1.png" alt="">
+    </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="  border: none;   color: var(--yellow-color);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" >
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto ">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="index.html">الرئيسية</a>
+                </li>    
+                <li class="nav-item">
+                  <a class="nav-link" href="packages.html">الباقات</a>
+                </li>  
+                <li class="nav-item">
+                  <a class="nav-link" href="menu.html">قائمة الطعام</a>
+                </li>                      
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html">الأسئلة الشائعة</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">من نحن</a>
+                </li>                                                   
+              </ul>
+              <img class="ms-4" src="images/logo-1.png" width="160" alt="">
+            </div>
+          </div>
+        </nav>
+  </header>
+  <section class="menu">
+    <div class="container">
+      <div class="tabs text-center ">
+        <button class="active-button" onclick="showTab('tab1',this)">الدجاج</button>
+        <button onclick="showTab('tab2', this)">اللحم</button>
+        <button onclick="showTab('tab3', this)">البحريات</button>
+        <button onclick="showTab('tab4', this)">صواني</button>
+        <button onclick="showTab('tab5', this)">ساندويتشات</button>
+        <button onclick="showTab('tab6', this)">فطور</button>
+        <button onclick="showTab('tab7', this)">سلطات</button>
+        <button onclick="showTab('tab8', this)">سناكات</button>
+        <button onclick="showTab('tab9', this)">كارب</button>
+        <button onclick="showTab('tab10', this)">صوصات</button>
+
+      </div>
+        <div class="row tab-content" id="tab1">
+        <div class="col-lg-4 col-md-6">
+            <div class="box" data=" مكعبات الدجاج المتبلة مقدم مع صوص الكاجو بالبهارات الهندية والزنجبيل">
+                <div class="image-box">
+                    <img src="images/chicken/chi-1.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> دجاج كاجو
+                        <!-- <img class="right" src="images/right.png" width="30" alt="">
+                        <img class="left" src="images/left.png" width="30" alt=""> -->
+                    </h6>
+                    <p class="text-center ">مكعبات الدجاج المتبلة مقدم مع صوص الكاجو بالبهارات الهندية والزنجبيل
+                        
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 157</td>
+                            <td>21.8 g</td>
+                            <td>6 g</td>
+                            <td>2.9 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/chicken/chi-2.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> دجاج باين
+                    </h6>
+                    <p class="text-center ">مكعبات الدجاج متبلة مقدمة مع صوص الكاري وقطع الاناناس
+                        
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 170</td>
+                            <td>21.8 g</td>
+                            <td>5.5 g</td>
+                            <td>4.5 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box" data=" مكعبات الدجاج المتبلة مقدم مع صوص الكاجو بالبهارات الهندية والزنجبيل">
+                <div class="image-box">
+                    <img src="images/chicken/chi-3.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> دجاج تكا
+                        <!-- <img class="right" src="images/right.png" width="30" alt="">
+                        <img class="left" src="images/left.png" width="30" alt=""> -->
+                    </h6>
+                    <p class="text-center ">مكعبات صدور الدجاج مشوية علي الفحم الحجري مقدمة مع صوص حار وبابريكا حارة
+                        
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 125</td>
+                            <td>22.8 g</td>
+                            <td>4 g</td>
+                            <td>1.5 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="box">
+              <div class="image-box">
+                  <img src="images/chicken/chi-4.jpg" alt="">
+              </div>
+              <div class="text-box p-0 pt-1 pb-1">
+                  <h6 class="text-center p-0 position-relative "> دجاج هيلين
+                  </h6>
+                  <p class="text-center ">
+                    كرات من الدجاج مبهرة بالبهارات الشرقيه والكرفس مقدمة مع صوص اللبن بالكريمة
+                  </p>
+                  <table>
+                      <thead>
+                        <tr>
+                          <th>السعرات</th>
+                          <th>البروتين</th>
+                          <th>الدهون</th>
+                          <th>الكاربوهيدرات</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>kcal 148</td>
+                          <td>21.7 g</td>
+                          <td>6.6 g</td>
+                          <td>6.1 g</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                      </tbody>
+                    </table>
+                  <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+              </div>
+              
+          </div>
+      </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="box">
+              <div class="image-box">
+                  <img src="images/chicken/chi-5.jpg" alt="">
+              </div>
+              <div class="text-box p-0 pt-1 pb-1">
+                  <h6 class="text-center p-0 position-relative "> دجاج بيستو 
+                  </h6>
+                  <p class="text-center ">
+                     شرائح الدجاج المشوية تقدم مع بيستو بالكريمة <br>
+                     &nbsp
+                  <table>
+                      <thead>
+                        <tr>
+                          <th>السعرات</th>
+                          <th>البروتين</th>
+                          <th>الدهون</th>
+                          <th>الكاربوهيدرات</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>kcal 128</td>
+                          <td>21.5 g</td>
+                          <td>3.9 g</td>
+                          <td>0.5 g</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+              </div>
+              
+          </div>
+      </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="box">
+              <div class="image-box">
+                  <img src="images/chicken/chi-6.jpg" alt="">
+              </div>
+              <div class="text-box p-0 pt-1 pb-1">
+                  <h6 class="text-center p-0 position-relative "> 
+                    دجاج اسطورة
+                  </h6>
+                  <p class="text-center ">
+                    صدور دجاج محشية بخلطة السبانخ ومشوية تقدم مع صوص الذرة والكريمة 
+                  </p>
+                     <table>
+                      <thead>
+                        <tr>
+                          <th>السعرات</th>
+                          <th>البروتين</th>
+                          <th>الدهون</th>
+                          <th>الكاربوهيدرات</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>kcal 136</td>
+                          <td>22.3 g</td>
+                          <td>3.4 g</td>
+                          <td>3.5 g</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+              </div>
+              
+          </div>
+      </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="box">
+              <div class="image-box">
+                  <img src="images/chicken/chi-7.jpg" alt="">
+              </div>
+              <div class="text-box p-0 pt-1 pb-1">
+                  <h6 class="text-center p-0 position-relative "> 
+                    دجاج لبتوس
+                  </h6>
+                  <p class="text-center ">
+                    صدور دجاج مشوية مقدمة مع صلصة الفطر والكريمة                 
+                   </p>
+                     <table>
+                      <thead>
+                        <tr>
+                          <th>السعرات</th>
+                          <th>البروتين</th>
+                          <th>الدهون</th>
+                          <th>الكاربوهيدرات</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>kcal 136</td>
+                          <td>24.3 g</td>
+                          <td>4.4 g</td>
+                          <td>1 g</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+              </div>
+              
+          </div>
+      </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="box">
+              <div class="image-box">
+                  <img src="images/chicken/chi-8.jpg" alt="">
+              </div>
+              <div class="text-box p-0 pt-1 pb-1">
+                  <h6 class="text-center p-0 position-relative "> 
+                    دجاج شاورما 
+                  </h6>
+                  <p class="text-center ">
+                    شرائح الدجاج متبلة بعصير البرتقال والليمون مع بودرة الثوم والبابريكا                  
+                   </p>
+                     <table>
+                      <thead>
+                        <tr>
+                          <th>السعرات</th>
+                          <th>البروتين</th>
+                          <th>الدهون</th>
+                          <th>الكاربوهيدرات</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>kcal 122</td>
+                          <td>21.4 g</td>
+                          <td>2.6 g</td>
+                          <td>2 g</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+              </div>
+              
+          </div>
+      </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="box">
+              <div class="image-box">
+                  <img src="images/chicken/chi-9.jpg" alt="">
+              </div>
+              <div class="text-box p-0 pt-1 pb-1">
+                  <h6 class="text-center p-0 position-relative "> 
+                    شيش طاووق                  
+                  </h6>
+                  <p class="text-center ">
+                    مكعبات دجاج متبلة مشوية مع اوريغانو وبابريكا وزبادي يوناني وعصير الليمون                  
+                   </p>
+                     <table>
+                      <thead>
+                        <tr>
+                          <th>السعرات</th>
+                          <th>البروتين</th>
+                          <th>الدهون</th>
+                          <th>الكاربوهيدرات</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>kcal 113</td>
+                          <td>20.3 g</td>
+                          <td>2.6 g</td>
+                          <td>1 g</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+              </div>
+              
+          </div>
+      </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="box">
+              <div class="image-box">
+                  <img src="images/holder.png" alt="">
+              </div>
+              <div class="text-box p-0 pt-1 pb-1">
+                  <h6 class="text-center p-0 position-relative "> 
+                    دجاج سيشوان                  
+                  </h6>
+                  <p class="text-center ">
+                    شرائح من الدجاج مشوح مع الخضروات و الصويا المحضرة بالطريقة الصينية                
+                     </p>
+                     <table>
+                      <thead>
+                        <tr>
+                          <th>السعرات</th>
+                          <th>البروتين</th>
+                          <th>الدهون</th>
+                          <th>الكاربوهيدرات</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>kcal 173</td>
+                          <td>22 g</td>
+                          <td>3 g</td>
+                          <td>8 g</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+              </div>
+              
+          </div>
+      </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="box">
+              <div class="image-box">
+                  <img src="images/chicken/chi-11.jpg" alt="">
+              </div>
+              <div class="text-box p-0 pt-1 pb-1">
+                  <h6 class="text-center p-0 position-relative "> 
+                    دجاج ليمون                  
+                  </h6>
+                  <p class="text-center ">
+                    مكعبات الدجاج مع الشبت والليمون والحليب                    
+                   </p>
+                     <table>
+                      <thead>
+                        <tr>
+                          <th>السعرات</th>
+                          <th>البروتين</th>
+                          <th>الدهون</th>
+                          <th>الكاربوهيدرات</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>kcal 172</td>
+                          <td>29 g</td>
+                          <td>5 g</td>
+                          <td>1 g</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+              </div>
+              
+          </div>
+      </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="box">
+              <div class="image-box">
+                  <img src="images/holder.png" alt="">
+              </div>
+              <div class="text-box p-0 pt-1 pb-1">
+                  <h6 class="text-center p-0 position-relative "> 
+                    دجاج كريدا                 
+                   </h6>
+                  <p class="text-center ">
+                    مكعبات الدجاج متبلة بالبهارات الهندية مع الكاري وجوز الهند            
+                         </p>
+                     <table>
+                      <thead>
+                        <tr>
+                          <th>السعرات</th>
+                          <th>البروتين</th>
+                          <th>الدهون</th>
+                          <th>الكاربوهيدرات</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>kcal 163</td>
+                          <td>24 g</td>
+                          <td>6 g</td>
+                          <td>4 g</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+              </div>
+              
+          </div>
+      </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="box">
+              <div class="image-box">
+                  <img src="images/holder.png" alt="">
+              </div>
+              <div class="text-box p-0 pt-1 pb-1">
+                  <h6 class="text-center p-0 position-relative "> 
+                    دجاج بي                  
+                    </h6>
+                  <p class="text-center ">
+                    قطع دجاج مع توابل البابريكا وعصير الليمون و البهرات الهندية                      
+                     </p>
+                     <table>
+                      <thead>
+                        <tr>
+                          <th>السعرات</th>
+                          <th>البروتين</th>
+                          <th>الدهون</th>
+                          <th>الكاربوهيدرات</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>kcal 176</td>
+                          <td>22 g</td>
+                          <td>7 g</td>
+                          <td>6 g</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+              </div>
+              
+          </div>
+      </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="box">
+              <div class="image-box">
+                  <img src="images/chicken/chi-14.jpg" alt="">
+              </div>
+              <div class="text-box p-0 pt-1 pb-1">
+                  <h6 class="text-center p-0 position-relative "> 
+                    دجاج بارميزان                   
+                   </h6>
+                  <p class="text-center ">
+                    شرائح الدجاج بالكريمة مشوية مع صوص جبنة البارميزان                 
+                      </p>
+                     <table>
+                      <thead>
+                        <tr>
+                          <th>السعرات</th>
+                          <th>البروتين</th>
+                          <th>الدهون</th>
+                          <th>الكاربوهيدرات</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>kcal 154</td>
+                          <td>23 g</td>
+                          <td>5 g</td>
+                          <td>3 g</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+              </div>
+              
+          </div>
+      </div>
+    </div>
+        <div class="row tab-content" id="tab2">
+
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/meat/meat-1.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      ستيك كارو
+                    </h6>
+                    <p class="text-center ">
+                      شرائح اللحم المشوية على الطريقة الفرنسية مع البصل وصوص الفطر بالكريمة 
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 215</td>
+                            <td>24.6 g</td>
+                            <td>11.5 g</td>
+                            <td>3.4 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/meat/meat-2.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      لحم لبتوس
+                    </h6>
+                    <p class="text-center ">
+                        
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 215</td>
+                            <td>36.3 g</td>
+                            <td>12.2 g</td>
+                            <td>3 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/meat/meat-3.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      لحم هيلين
+                    </h6>
+                    <p class="text-center ">
+                      كرات لحم متبلة مشوية تقدم مع صوص اللبن بالنعناع والكريمة
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 166</td>
+                            <td>25.3 g</td>
+                            <td>6.8 g</td>
+                            <td>6.3 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/meat/meat-4.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      لحم ماسالا
+                    </h6>
+                    <p class="text-center ">
+                      لحم مكعبات منزوع الدهون مسلوق يقدم مع صوص الماسالا بالبهارات الهندية والكاجو والجنزبيل
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 230</td>
+                            <td>27.5 g</td>
+                            <td>7.3 g</td>
+                            <td>3.9 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      لحم باميا
+                    </h6>
+                    <p class="text-center ">
+                      لحم مكعبات خالي من الدهون مسلوق ومطبوخ مع طاجن البامية بالبهارات الشرقية
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 225</td>
+                            <td>29 g</td>
+                            <td>8 g</td>
+                            <td>9 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      لحم تاكو
+                    </h6>
+                    <p class="text-center ">
+                      التاكو لحم مكسيكي مع العسل وعصير الليمون والزعتر
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 238</td>
+                            <td>29 g</td>
+                            <td>7 g</td>
+                            <td>8 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/meat/meat-7.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      لحم بالفول السوداني
+                    </h6>
+                    <p class="text-center ">
+                      لحم مكعبات منزوع الدهون مسلوق مقدم مع زبدة فول سوداني وبيكان مع جوز هند والصويا
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 330</td>
+                            <td>25 g</td>
+                            <td>16 g</td>
+                            <td>7 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      لحم كبسة
+                    </h6>
+                    <p class="text-center ">
+                      لحم مكعبات مطبوخ مع خلطة البهارات الشرقية باضافة لمسات بي سانوس يقدم مع ارز كبسة
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 271</td>
+                            <td>25 g</td>
+                            <td>19 g</td>
+                            <td>0 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/meat/meat-9.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      لحم سيشوان
+                    </h6>
+                    <p class="text-center ">
+                      لحم شرائح بالطريقة الصينية كرسبي مضاف الية الصويا صوص والجنزبيل والثوم
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 215</td>
+                            <td>36.3 g</td>
+                            <td>12.2 g</td>
+                            <td>3 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      لحم كباب
+                    </h6>
+                    <p class="text-center ">
+                      كباب لحم مبهر بالبهارات الخاصة مشوي على الفحم
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 274</td>
+                            <td>25.1 g</td>
+                            <td>19 g</td>
+                            <td>0.7 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+        <div class="row tab-content" id="tab3">
+
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/fish/fish-1.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      سالمون
+                    </h6>
+                    <p class="text-center ">
+                      سالمون مبهر مشوي مع الخردل والليمون
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 227</td>
+                            <td>20.9 g</td>
+                            <td>15 g</td>
+                            <td>1.1 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/fish/fish-2.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      شرمب كاري
+                    </h6>
+                    <p class="text-center ">
+                      جمبري مع الكرفس والجزر والكاري مع قليل من الكريمة
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 212.5</td>
+                            <td>23.3 g</td>
+                            <td>12.5 g</td>
+                            <td>1.8 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      شرمب كاجو
+                    </h6>
+                    <p class="text-center ">
+                      جمبري مسلوق يقدم مع صوص الكاجو بالجنزبيل وبهارات مسالا
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 197</td>
+                            <td>22 g</td>
+                            <td>2 g</td>
+                            <td>11 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/fish/fish-4.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      سمك فيلية
+                    </h6>
+                    <p class="text-center ">
+                      سمك مبهر مشوي مع الخردل وعصير الليمون
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 203</td>
+                            <td>23.8 g</td>
+                            <td>11.6 g</td>
+                            <td>1.1 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      سمك قوا
+                    </h6>
+                    <p class="text-center ">
+                      سمك مشوي مع البهارات الهندية وحليب جوز الهند
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 188</td>
+                            <td>21 g</td>
+                            <td>9 g</td>
+                            <td>3 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/fish/fish-6.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      سمك تكا
+                    </h6>
+                    <p class="text-center ">
+                      سمك مشوي بصوص تكا حار مع كركم وبابريكا وعصير ليمون
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 149</td>
+                            <td>20 g</td>
+                            <td>6 g</td>
+                            <td>5 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/fish/fish-7.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      سمك طاجن
+                    </h6>
+                    <p class="text-center ">
+                      سمك مشوي مع صلصة بلسمك مع زعتر والفلفل البارد والجزر
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 175</td>
+                            <td>21 g</td>
+                            <td>6 g</td>
+                            <td>7 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      سمك بالسبانخ
+                    </h6>
+                    <p class="text-center ">
+                      سمك فيلية مطبوخ بالسبانخ والكريمة مع عصير الليمون 
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 161</td>
+                            <td>20.9 g</td>
+                            <td>6.9 g</td>
+                            <td>2.6 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        <div class="row tab-content" id="tab4">
+
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      مكرونة بيستو
+                    </h6>
+                    <p class="text-center ">
+                      المكرونة المبرومة مقدمة مع الدجاج المتبل علي الطريقة الاطالية المشوي مقدمة بصوص الكريمة
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 400</td>
+                            <td>38 g</td>
+                            <td>5.2 g</td>
+                            <td>3.2 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      فتوتشيني دجاج
+                    </h6>
+                    <p class="text-center ">
+                      دجاج بالريحان والثوم والبارميزان مشوي مع صوص الكريمة الكلاسيك والمكرونة الشريط
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 397</td>
+                            <td>20 g</td>
+                            <td>9 g</td>
+                            <td>32.7 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      مكرونة بوناليز
+                    </h6>
+                    <p class="text-center ">
+                      مكرونة اسباجتي مع اللحم المفروم بصلصة بي سانوس الرهيبة والزعتر بالبارميزان
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 376</td>
+                            <td>18.3 g</td>
+                            <td>5 g</td>
+                            <td>40 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        <div class="row tab-content" id="tab5">
+
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/sandwich/meat.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      برجر لحم
+                    </h6>
+                    <p class="text-center ">
+                      لحم مصنع بطريقة بي سانوس الكلاسيكية مع الصوص الحار والجبن
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 423</td>
+                            <td>25.4 g</td>
+                            <td>9</td>
+                            <td>34 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/sandwich/sand-2.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      ساندويتش بي
+                    </h6>
+                    <p class="text-center ">
+                      دجاج شرائح بالبهارات المكسيكية مع صوص الثوم الباردمع الجبن
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 364</td>
+                            <td>23.4 g</td>
+                            <td>10 g</td>
+                            <td>34 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/sandwich/meat.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      برجر دجاج
+                    </h6>
+                    <p class="text-center ">
+                      دجاج خالي تماما من الدهون مصنع بايدي بي سانوس بالطعم الايطالي مع الصوص الحار والجبن
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 400</td>
+                            <td>23.4 g</td>
+                            <td>9 g</td>
+                            <td>34 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        <div class="row tab-content" id="tab6">
+
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/breakfast/break-1.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      رول كبدة
+                    </h6>
+                    <p class="text-center ">
+                      كبد الغنم الفريش شرائح متبل بالنكهه الخاصة مع الثوم والفلفل البارد في خبز التورتيلا الصحي
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 269</td>
+                            <td>24.3 g</td>
+                            <td>7.3 g</td>
+                            <td>24.7 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/breakfast/break-2.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      ساندوتش كبدة
+                    </h6>
+                    <p class="text-center ">
+                      كبد البقر الفريش شرائح متبل بالنكهه الخاصة مع الثوم والفلفل البارد في خبز الصامولي الصحي 
+                                       </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 431</td>
+                            <td>31.3 g</td>
+                            <td>9.3 g</td>
+                            <td>53.7 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/breakfast/break-3.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      كلوب تركي مدخن 
+                    </h6>
+                    <p class="text-center ">
+                      التركي المدخن من النوعية الممتازة مع شرائح الجبن والصوص الحار مع توست النخالة    
+                    </p>    
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 171</td>
+                            <td>7 g</td>
+                            <td>4.7 g</td>
+                            <td>26.5 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/breakfast/break-4.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      كلوب حلوم 
+                    </h6>
+                    <p class="text-center ">
+                      جبن الحلوم المشوي علي الطريقة الايطالية مقدم مع طماطم بالاعشاب في توست النخالة     
+                    </p>   
+                    <table>              
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 285.3</td>
+                            <td>15.3 g</td>
+                            <td>12.4 g</td>
+                            <td>28.7 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/breakfast/break-5.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      ساندوتش تونا 
+                    </h6>
+                    <p class="text-center ">
+                      خليط التونة الرهيب بالخضروات الفريش والذرة مع صوص الاعشاب المميز بخبز صامولي               
+                         </p>       
+                         <table>                                  
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 370</td>
+                            <td>19.1 g</td>
+                            <td>7.8 g</td>
+                            <td>51.9 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                     حمص
+                    </h6>
+                    <p class="text-center ">
+                      سلطة حمص الطحينة المصنع بايدي بي سانوس مع خبز التورتيلا وزيت الزيتون                       
+                      </p>        
+                      <table>          
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 130</td>
+                            <td>3.9 g</td>
+                            <td>2.9 g</td>
+                            <td>21.1 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/breakfast/break-7.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      حمص شمندر
+                    </h6>
+                    <p class="text-center ">
+                      سلطة الحمص مع الشمندر الفريش بطعمه المميز ولونة الرائع مع خبز التورتيلا وزيت الزيتون                      
+                      </p> 
+                      <table>                 
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 130</td>
+                            <td>3.10 g</td>
+                            <td>2.10 g</td>
+                            <td>21.2 g</td>
+                          </tr>
+                          <!-- Add more rows as needed -->
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        <div class="row tab-content" id="tab7">
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/salad/salad-1.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      سلطة سيزر
+                    </h6>
+                    <p class="text-center ">
+                      صدور الدجاج المشوية مع الجبن البارميزان والخس
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 106</td>
+                            <td>8.3 g</td>
+                            <td>4.4 g</td>
+                            <td>9 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/salad/salad-2.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      سلطة يونانية 
+                    </h6>
+                    <p class="text-center ">
+                      خضروات طازجة مع جبنة قريش والزعتر وصوص الليمون
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 42</td>
+                            <td>1.7 g</td>
+                            <td>2.4 g</td>
+                            <td>4.4 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/salad/salad-3.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      سلطة تونا 
+                    </h6>
+                    <p class="text-center ">
+                      خس امريكي مع الذرة وفاصوليا حمراء مع التونة
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 69</td>
+                            <td>5.9 g</td>
+                            <td>4.9 g</td>
+                            <td>5.2 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      سلطة خضراء
+                    </h6>
+                    <p class="text-center ">
+                      خضروات طازجة مع صوص دبس الرمان
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 41</td>
+                            <td>5.9 g</td>
+                            <td>0.5 g</td>
+                            <td>8.8 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      سلطة كينوا
+                    </h6>
+                    <p class="text-center ">
+                      قطع المانجو مع الذرة و الافوكادو وصوص الهاني ماسترد
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 269</td>
+                            <td>7.7 g</td>
+                            <td>8.4 g</td>
+                            <td>45.7 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      سلطة تبولة كينوا
+                    </h6>
+                    <p class="text-center ">
+                      كينوا بيضاء ورمان مع نعناع وعين جمل و صوص دبس الرمان
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 270</td>
+                            <td>5.4 g</td>
+                            <td>7.9 g</td>
+                            <td>46.2 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      سلطة مكس
+                    </h6>
+                    <p class="text-center ">
+                      الخضروات الطازجة مع كريمة الذرة وصوص الخردل بالليمون
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 230</td>
+                            <td>12.3 g</td>
+                            <td>2.6 g</td>
+                            <td>36.8 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/salad/salad-8.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      سلطة جرجير
+                    </h6>
+                    <p class="text-center ">
+                      جرجير مع الرمان والمانجه وجبن قريش يقدم مع صوص العسل والخردل
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 128</td>
+                            <td>7.4 g</td>
+                            <td>1.8 g</td>
+                            <td>23.5 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        <div class="row tab-content" id="tab8">
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      جرانولا عسل 
+                    </h6>
+                    <p class="text-center ">
+                      رقائق من الشوفان المقرمشة و الفواكه المجففة تضاف الى خليط اللبن اليوناني الكريمي مع العسل
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 316</td>
+                            <td>16 g</td>
+                            <td>6 g</td>
+                            <td>32 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      جرانولا فراولة
+                    </h6>
+                    <p class="text-center ">
+                      رقائق من الشوفان المقرمشة و الفواكه المجففة تضاف الى خليط اللبن اليوناني الكريمي مع مربى الفراولة
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 316</td>
+                            <td>16 g</td>
+                            <td>6 g</td>
+                            <td>32 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      سوفلية
+                    </h6>
+                    <p class="text-center ">
+                      كيكة خفيف من الشوكلاتة خام
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 248</td>
+                            <td>7 g</td>
+                            <td>8 g</td>
+                            <td>33 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/snacks/snack-4.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      نوتشوز
+                    </h6>
+                    <p class="text-center ">
+                      مزيج من المكسرات مع زبدة الفول السوداني مضاف اليها خليط من القشطة قليلة الدسم و شوكلاته الخام
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 328</td>
+                            <td>5 g</td>
+                            <td>16 g</td>
+                            <td>33 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/snacks/snack-5.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      عريكة
+                    </h6>
+                    <p class="text-center ">
+                      قمح محمص مفتت مع التمر و قليل من العسل بالإضافة للقشطة و حبة البركة
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 258</td>
+                            <td>4 g</td>
+                            <td>10 g</td>
+                            <td>32 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/snacks/snack-6.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      شوكوبوم
+                    </h6>
+                    <p class="text-center ">
+                      قطع من البسكوت ممزوجة مع الشوكلاته الداكنة
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 190</td>
+                            <td>17 g</td>
+                            <td>6 g</td>
+                            <td>17 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        <div class="row tab-content" id="tab9">
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/carb/carb-1.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      رز ابيض
+                    </h6>
+                    <p class="text-center ">
+                      ارز بسمتي درجة ممتازة مطبوخ فقط مع قليل من االملح علي البخار
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 121</td>
+                            <td>3 g</td>
+                            <td>0 g</td>
+                            <td>28 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/carb/carb-2.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      رز بخاري
+                    </h6>
+                    <p class="text-center ">
+                      ارز بسمتي درجه اولى مع الجزر المبشور والكاري
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 122</td>
+                            <td>3 g</td>
+                            <td>0 g</td>
+                            <td>28 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/carb/carb-3.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      رز برياني
+                    </h6>
+                    <p class="text-center ">
+                      ارز بسمتي درجة اولى مع النعناع والجنزبيل وبهارات البرياني الاصلية
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 122</td>
+                            <td>3 g</td>
+                            <td>0 g</td>
+                            <td>28 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      رز بالخضار
+                    </h6>
+                    <p class="text-center ">
+                      ارز بسمتي درجة ممتازة مطبوخ مع الخضروات وصلصة الطماطم علي الطريقة المصرية
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 122</td>
+                            <td>3 g</td>
+                            <td>0 g</td>
+                            <td>28 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      رز شمندر
+                    </h6>
+                    <p class="text-center ">
+                      ارز بسمتي درجة اولى مع الشمندر الفريش والثوم علي البخار
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 126</td>
+                            <td>3 g</td>
+                            <td>0 g</td>
+                            <td>28 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      رز كبسة
+                    </h6>
+                    <p class="text-center ">
+                      ارز بسمتي درجة اولى مطبوخ بالبهارات الشرقية علي طريقة بي سانوس
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 129</td>
+                            <td>3 g</td>
+                            <td>0 g</td>
+                            <td>28 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/carb/carb-7.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      بطاطس مهروسة
+                    </h6>
+                    <p class="text-center ">
+                      بطاطس بورية اللذيذة مع الذبدة والكريمة
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 155</td>
+                            <td>4 g</td>
+                            <td>3 g</td>
+                            <td>30 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      برغل
+                    </h6>
+                    <p class="text-center ">
+                      البرغل هو حبوب القمح المسلوقه المجروشة مطبوخه مع الخضار الفريش والصلصة علي الطريقة التركية
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 173</td>
+                            <td>5 g</td>
+                            <td>3 g</td>
+                            <td>34 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/carb/crab-9.jpg" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      مكرونة
+                    </h6>
+                    <p class="text-center ">
+                      مكرونة فوزيلي مسلوقة مطبوخه مع الفلفل والثوم والبقدونس
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 185</td>
+                            <td>7 g</td>
+                            <td>6 g</td>
+                            <td>37 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 100 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        <div class="row tab-content" id="tab10">
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      صوص طحينة وخردل
+                    </h6>
+                    <p class="text-center ">
+                      مزيج من الطحينة والخردل مع العسل وبعض البهارات
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 87</td>
+                            <td>2.5 g</td>
+                            <td>7.5 g</td>
+                            <td>3.9 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 30 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      صوص طحينة 
+                    </h6>
+                    <p class="text-center ">
+                      صلصة الطحينة الشرقية علي طريقة بي سانوس
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 70</td>
+                            <td>1.7 g</td>
+                            <td>5 g</td>
+                            <td>2 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 30 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      صوص كريمي
+                    </h6>
+                    <p class="text-center ">
+                      خليط من الزبادي اليوناني والكريمة بالبهارات الخاصة
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 24</td>
+                            <td>1.9 g</td>
+                            <td>1.1 g</td>
+                            <td>1.5 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 30 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      صوص كريمي مدخن
+                    </h6>
+                    <p class="text-center ">
+                      خليط اللبن والكريمة مع النكهه المدخنة
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 22</td>
+                            <td>1.8 g</td>
+                            <td>0.8 g</td>
+                            <td>1.8 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 30 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      فلفل مجروش
+                    </h6>
+                    <p class="text-center ">
+                      فلفل حار هندي مجروش بواسطة بي سانوس
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 94.2</td>
+                            <td>3.6 g</td>
+                            <td>5 g</td>
+                            <td>16 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 30 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="box">
+                <div class="image-box">
+                    <img src="images/holder.png" alt="">
+                </div>
+                <div class="text-box p-0 pt-1 pb-1">
+                    <h6 class="text-center p-0 position-relative "> 
+                      سيراشا حار
+                    </h6>
+                    <p class="text-center ">
+                      صلصة حارة
+                    </p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>السعرات</th>
+                            <th>البروتين</th>
+                            <th>الدهون</th>
+                            <th>الكاربوهيدرات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>kcal 19</td>
+                            <td>0 g</td>
+                            <td>0 g</td>
+                            <td>4 g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <span class="text-center pe-2" style="font-size: 8px;" > * لكل 30 جرام</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container text-center text-lg-end ">
+      <div class="row">
+        <div class="col-lg-3">
+          <ul class="list-unstyled p-0">
+            <li class="mb-3">
+              <a href="index.html" class="text-decoration-none ">الرئيسية</a>
+            </li>
+           
+            <li class="mb-3">
+              <a href="about-us.html" class="text-decoration-none  ">من نحن</a>
+            </li>             
+            <li class="mb-3">
+              <a href="packages.html" class="text-decoration-none   ">الباقات</a>
+            </li>
+            <li class="mb-3">
+              <a href="faq.html" class="text-decoration-none  ">الأسئله الشائعة</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul class="list-unstyled p-0 ">
+            <h5>فروعنا</h5>
+            <li class="mb-2">
+              <a href="https://maps.app.goo.gl/pXKrFwQfp4DAg8se7" target="_blank" class="   "><img src="" width="40" alt="" >فرع البغدادية الغربية – جدة </a>
+            </li>
+            <li class="mb-2" style="margin-left: 50px;">
+              <a href="https://maps.app.goo.gl/3wjPWbggeqQKvLdAA" target="_blank" class=" "><img src="" width="40" alt="" >فرع المحمدية – جدة </a>
+            </li>
+            <li> السبت إلى الخميس <br> 12 ظهرا حتى 12 
+              مساء</li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+         <p> مطعم بي سانوس للوجبات الصحية <br>
+          شارع حائل مدينة جدة <br>
+           المملكة العربية السعودية<br>
+           <br>00966507001669
+          <br>info@besanus-sa.com <br>
+         </p>
+        </div>
+        <div class="col-lg-3">
+          <div class="logo-holder text-center mb-3 pe-4">
+            <img src="images/logo-1.png" width="180" alt="">
+          </div>
+          <ul class="list-unstyled d-flex justify-content-center align-items-center ">
+            <li class="mb-3 ms-4"><a href="https://instagram.com/besanus"><img src="images/instagram.png" width="28" alt=""></a></li>
+            <li class="mb-3 ms-4"><a href="https://x.com/be_sanus"><img src="images/twitter.png" width="28" alt=""></a></li>
+            <li class="mb-3 ms-4"><a href="https://www.tiktok.com/@besanus"><img src="images/tik-tok.png" width="28" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ 
+  <script>
+    // Function to show/hide tabs
+    function showTab(tabId, button) {
+      // Hide all tabs
+      var tabs = document.getElementsByClassName('tab-content');
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = 'none';
+      }
+  
+      // Deactivate all tab buttons
+      var tabButtons = document.querySelectorAll('.tabs button');
+      for (var i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove('active-button');
+        tabButtons[i].classList.add('butt');
+        
+        
+      }
+  
+      // Show the selected tab and activate its button
+      document.getElementById(tabId).style.display = 'flex';
+      button.classList.remove('butt');
+      button.classList.add('active-button');
+      
+    }
+  
+    // Show the default tab on page load
+    // Note: The first button is manually assigned the 'active-button' class for the default state
+    // This is to ensure that the default button has the correct style even before it is clicked
+    // The class is also added to the corresponding tab content
+    showTab('tab1', document.querySelector('.tabs button.active-button'));
+  </script>
+  
+
+</body>
+</html>
