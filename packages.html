@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>الباقات</title>
+</head>
+<body>
+  <header class="w-100 position-relative ">
+    <div class="loader">
+      <img src="images/logo-1.png" alt="">
+    </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="  border: none;   color: var(--yellow-color);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" >
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto ">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="index.html">الرئيسية</a>
+                </li>    
+                <li class="nav-item">
+                  <a class="nav-link" href="packages.html">الباقات</a>
+                </li>  
+                <li class="nav-item">
+                  <a class="nav-link" href="menu.html">قائمة الطعام</a>
+                </li>                      
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html">الأسئلة الشائعة</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">من نحن</a>
+                </li>                                                   
+              </ul>
+              <img class="ms-4" src="images/logo-1.png" width="160" alt="">
+            </div>
+          </div>
+        </nav>
+  </header>
+  <div class="wats-icon">
+    <a href="https://api.whatsapp.com/send?phone=966507001669"><img src="images/whatsapp.png" width="60" alt="" ></a>
+  </div>
+  <div class="holder-package">
+  </div>    <div class="tabs text-center ">
+    <button class="active-button" onclick="showTab('tab1', this)">الباقات الشهرية</button>
+    <button onclick="showTab('tab2', this)">الباقات الأسبوعية</button>
+    <button onclick="showTab('tab3', this)">باقات غداء العمل</button>
+    <button onclick="showTab('tab4', this)">باقات الاٍفطار</button>
+    <button onclick="showTab('tab5', this)">الاٍضافات</button>
+  </div>
+  <div class="container packages swiper mySwiper tab-content " id="tab1" >
+
+    <div class="swiper-wrapper">
+        <div class="swiper-slide d-flex justify-content-center ">
+          <div class="box">
+            <img src="images/pack-1 (1).webp"  alt="">
+            <div class="text-box">
+                <p class="head">باقة <span>100</span> جرام الشهرية</p>
+                <div class="inner-box d-flex flex-nowrap justify-content-between ">
+                    <ul class="list-unstyled text-end p-0">
+                        <h6>عدد الوجبات</h6>
+                        <li class="fw-bold ">وجبة</li>
+                        <li class="fw-bold ">وجبتين</li>
+                        <li class="fw-bold ">3 وجبات</li>
+                        <li class="fw-bold ">4 وجبات</li>
+                    </ul>
+                    <ul class="list-unstyled text-start p-0 price">
+                        <h6>السعر</h6>
+                        <li class="fw-bold ">499</li>
+                        <li class="fw-bold ">999</li>
+                        <li class="fw-bold ">1479</li>
+                        <li class="fw-bold ">1999</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info-box">
+                <ul class="list-unstyled p-0 ">
+                    <li data="مدة الباقة">26 يوم</li>
+                    <li data="محتويات الباقة">66% من الباقة دجاج وسمك <br>
+                    34% من الباقة لحم</li>
+                    <li data="طلب اضافي">عند طلب وجبة لحم اضافية زيادة 5 ريال فقط <br>
+                    عند طلب وجبة شرمب زيادة 10 ريال فقط <br>
+                عند طلب وجبة سالمون زيادة 20 ريال فقط</li>
+                    <li data="لا تشمل">الأسعار لا تشمل التوصيل</li>
+                </ul>
+            </div>
+          </div>
+          
+        </div>
+        <div class="swiper-slide d-flex justify-content-center ">
+          <div class="box">
+            <img src="images/pack-2 (1).webp"  alt="">
+            <div class="text-box">
+                <p class="head" id="green">باقة <span>150</span> جرام الشهرية</p>
+                <div class="inner-box d-flex flex-nowrap justify-content-between ">
+                    <ul class="list-unstyled text-end p-0">
+                        <h6>عدد الوجبات</h6>
+                        <li class="fw-bold ">وجبة</li>
+                        <li class="fw-bold ">وجبتين</li>
+                        <li class="fw-bold ">3 وجبات</li>
+                        <li class="fw-bold ">4 وجبات</li>
+                    </ul>
+                    <ul class="list-unstyled text-start p-0 price">
+                        <h6>السعر</h6>
+                        <li class="fw-bold ">659</li>
+                        <li class="fw-bold ">1259</li>
+                        <li class="fw-bold ">1888</li>
+                        <li class="fw-bold ">2499</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info-box">
+                <ul class="list-unstyled p-0 ">
+                    <li data="مدة الباقة">26 يوم</li>
+                    <li data="محتويات الباقة">66% من الباقة دجاج وسمك <br>
+                    34% من الباقة لحم</li>
+                    <li data="طلب اضافي">عند طلب وجبة لحم اضافية زيادة 5 ريال فقط <br>
+                    عند طلب وجبة شرمب زيادة 10 ريال فقط <br>
+                عند طلب وجبة سالمون زيادة 20 ريال فقط</li>
+                    <li data="لا تشمل">الأسعار لا تشمل التوصيل</li>
+                </ul>
+            </div>
+          </div> 
+        </div>
+        <div class="swiper-slide d-flex justify-content-center ">
+          <div class="box">
+            <img src="images/pack-3 (1).webp"  alt="">
+            <div class="text-box">
+                <p class="head" id="red">باقة <span>200</span> جرام الشهرية</p>
+                <div class="inner-box d-flex flex-nowrap justify-content-between ">
+                    <ul class="list-unstyled text-end p-0">
+                        <h6>عدد الوجبات</h6>
+                        <li class="fw-bold ">وجبة</li>
+                        <li class="fw-bold ">وجبتين</li>
+                        <li class="fw-bold ">3 وجبات</li>
+                        <li class="fw-bold ">4 وجبات</li>
+                    </ul>
+                    <ul class="list-unstyled text-start p-0 price">
+                        <h6>السعر</h6>
+                        <li class="fw-bold ">799</li>
+                        <li class="fw-bold ">1499</li>
+                        <li class="fw-bold ">2259</li>
+                        <li class="fw-bold ">2999</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info-box">
+                <ul class="list-unstyled p-0 ">
+                    <li data="مدة الباقة">26 يوم</li>
+                    <li data="محتويات الباقة">66% من الباقة دجاج وسمك <br>
+                    34% من الباقة لحم</li>
+                    <li data="طلب اضافي">عند طلب وجبة لحم اضافية زيادة 5 ريال فقط <br>
+                    عند طلب وجبة شرمب زيادة 10 ريال فقط <br>
+                عند طلب وجبة سالمون زيادة 20 ريال فقط</li>
+                    <li data="لا تشمل">الأسعار لا تشمل التوصيل</li>
+                </ul>
+            </div>
+          </div>
+          
+        </div>
+
+    </div>
+                <div class="swiper-button-next" id="icon"></div>
+                <div class="swiper-button-prev" id="icon"></div>
+                <div class="swiper-pagination" id="icon"></div>
+  </div>
+  <div class="container packages swiper mySwiper tab-content" id="tab2">
+
+    <div class="swiper-wrapper">
+      <div class="swiper-slide d-flex justify-content-center ">
+        <div class="box">
+          <img src="images/pack-1 (1).webp"  alt="">
+          <div class="text-box">
+              <p class="head">باقة <span>100</span>جرام الأسبوعية</p>
+              <div class="inner-box d-flex flex-nowrap justify-content-between ">
+                  <ul class="list-unstyled text-end p-0">
+                      <h6>عدد الوجبات</h6>
+                      <li class="fw-bold ">وجبة</li>
+                      <li class="fw-bold ">وجبتين</li>
+                      <li class="fw-bold ">3 وجبات</li>
+                      <li class="fw-bold ">4 وجبات</li>
+                  </ul>
+                  <ul class="list-unstyled text-start p-0 price">
+                      <h6>السعر</h6>
+                      <li class="fw-bold ">150</li>
+                      <li class="fw-bold ">300</li>
+                      <li class="fw-bold ">440</li>
+                      <li class="fw-bold ">580</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="info-box">
+              <ul class="list-unstyled p-0 ">
+                  <li data="مدة الباقة">6 أيام</li>
+                  <li data="محتويات الباقة">66% من الباقة دجاج وسمك <br>
+                  34% من الباقة لحم</li>
+                  <li data="طلب اضافي">عند طلب وجبة لحم اضافية زيادة 5 ريال فقط <br>
+                  عند طلب وجبة شرمب زيادة 10 ريال فقط <br>
+              عند طلب وجبة سالمون زيادة 20 ريال فقط</li>
+                  <li data="لا تشمل">الأسعار لا تشمل التوصيل</li>
+              </ul>
+          </div>
+        </div>
+        
+      </div>
+      <div class="swiper-slide d-flex justify-content-center ">
+        <div class="box">
+          <img src="images/pack-2 (1).webp"  alt="">
+          <div class="text-box">
+              <p class="head" id="green">باقة <span>150</span> جرام الأسبوعية</p>
+              <div class="inner-box d-flex flex-nowrap justify-content-between ">
+                  <ul class="list-unstyled text-end p-0">
+                      <h6>عدد الوجبات</h6>
+                      <li class="fw-bold ">وجبة</li>
+                      <li class="fw-bold ">وجبتين</li>
+                      <li class="fw-bold ">3 وجبات</li>
+                      <li class="fw-bold ">4 وجبات</li>
+                  </ul>
+                  <ul class="list-unstyled text-start p-0 price">
+                      <h6>السعر</h6>
+                      <li class="fw-bold ">190</li>
+                      <li class="fw-bold ">360</li>
+                      <li class="fw-bold ">540</li>
+                      <li class="fw-bold ">710</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="info-box">
+              <ul class="list-unstyled p-0 ">
+                  <li data="مدة الباقة">6 أيام</li>
+                  <li data="محتويات الباقة">66% من الباقة دجاج وسمك <br>
+                  34% من الباقة لحم</li>
+                  <li data="طلب اضافي">عند طلب وجبة لحم اضافية زيادة 5 ريال فقط <br>
+                  عند طلب وجبة شرمب زيادة 10 ريال فقط <br>
+              عند طلب وجبة سالمون زيادة 20 ريال فقط</li>
+                  <li data="لا تشمل">الأسعار لا تشمل التوصيل</li>
+              </ul>
+          </div>
+        </div>
+        
+      </div>
+      <div class="swiper-slide d-flex justify-content-center ">
+        <div class="box">
+          <img src="images/pack-3 (1).webp"  alt="">
+          <div class="text-box">
+              <p class="head" id="red">باقة <span>200</span> جرام الأسبوعية</p>
+              <div class="inner-box d-flex flex-nowrap justify-content-between ">
+                  <ul class="list-unstyled text-end p-0">
+                      <h6>عدد الوجبات</h6>
+                      <li class="fw-bold ">وجبة</li>
+                      <li class="fw-bold ">وجبتين</li>
+                      <li class="fw-bold ">3 وجبات</li>
+                      <li class="fw-bold ">4 وجبات</li>
+                  </ul>
+                  <ul class="list-unstyled text-start p-0 price">
+                      <h6>السعر</h6>
+                      <li class="fw-bold ">220</li>
+                      <li class="fw-bold ">430</li>
+                      <li class="fw-bold ">460</li>
+                      <li class="fw-bold ">850</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="info-box">
+              <ul class="list-unstyled p-0 ">
+                  <li data="مدة الباقة">6 أيام</li>
+                  <li data="محتويات الباقة">66% من الباقة دجاج وسمك <br>
+                  34% من الباقة لحم</li>
+                  <li data="طلب اضافي">عند طلب وجبة لحم اضافية زيادة 5 ريال فقط <br>
+                  عند طلب وجبة شرمب زيادة 10 ريال فقط <br>
+              عند طلب وجبة سالمون زيادة 20 ريال فقط</li>
+                  <li data="لا تشمل">الأسعار لا تشمل التوصيل</li>
+              </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+                <div class="swiper-button-next" id="icon"></div>
+                <div class="swiper-button-prev" id="icon"></div>
+                <div class="swiper-pagination" id="icon"></div>
+  </div>
+  <div class="container packages swiper mySwiper tab-content" id="tab3">
+  
+    <div class="swiper-wrapper">
+      <div class="swiper-slide d-flex justify-content-center ">
+        <div class="box">
+          <img src="images/pack-4 (1).webp"  alt="">
+          <div class="text-box">
+              <p class="head" id="red">باقة غداء العمل الشهري</p>
+              <div class="inner-box d-flex flex-nowrap justify-content-between ">
+                  <ul class="list-unstyled text-end p-0">
+                      <h6>الوزن</h6>
+                      <li class="fw-bold ">100 <span> جرام</span></li>
+                      <li class="fw-bold ">150 <span> جرام</span></li>
+                      <li class="fw-bold ">200 <span> جرام</span></li>
+
+                  </ul>
+                  <ul class="list-unstyled text-start p-0 price">
+                      <h6>السعر</h6>
+                      <li class="fw-bold ">699</li>
+                      <li class="fw-bold ">799</li>
+                      <li class="fw-bold ">899</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="info-box">
+              <ul class="list-unstyled p-0 ">
+                  <li data="مدة الباقة">20 يوم</li>
+                  <li data="محتويات الباقة"> جميع الأطباق عدا السالمون <br>
+                      &nbsp; &nbsp; &nbsp; 
+                  </li>
+                  <li data="طلب اضافي">عند طلب وجبة سالمون زياده 20 ريال فقط</li>
+                  <li data="لا تشمل">الأسعار لا تشمل التوصيل</li>
+              </ul>
+          </div>
+        </div>
+        
+      </div>
+      <div class="swiper-slide d-flex justify-content-center ">
+        <div class="box">
+          <img src="images/pack-5 (1).webp"  alt="">
+          <div class="text-box">
+              <p class="head" id="yellow">باقة غداءالعمل الأسبوعي</p>
+              <div class="inner-box d-flex flex-nowrap justify-content-between ">
+                  <ul class="list-unstyled text-end p-0">
+                      <h6>الوزن</h6>
+                      <li class="fw-bold ">100 <span> جرام</span></li>
+                      <li class="fw-bold ">150 <span> جرام</span></li>
+                      <li class="fw-bold ">200 <span> جرام</span></li>
+
+                  </ul>
+                  <ul class="list-unstyled text-start p-0 price">
+                      <h6>السعر</h6>
+                      <li class="fw-bold ">199</li>
+                      <li class="fw-bold ">219</li>
+                      <li class="fw-bold ">239</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="info-box">
+              <ul class="list-unstyled p-0 ">
+                  <li data="مدة الباقة">5 أيام</li>
+                  <li data="محتويات الباقة"> جميع الأطباق عدا السالمون <br>
+                      &nbsp; &nbsp; &nbsp; 
+                  </li>
+                  <li data="طلب اضافي">عند طلب وجبة سالمون زياده 20 ريال فقط</li>
+                  <li data="لا تشمل">الأسعار لا تشمل التوصيل</li>
+              </ul>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+                <div class="swiper-button-next" id="icon"></div>
+                <div class="swiper-button-prev" id="icon"></div>
+                <div class="swiper-pagination" id="icon"></div>
+  </div>
+  <div class="container packages swiper mySwiper tab-content" id="tab4">
+
+    <div class="swiper-wrapper">
+      <div class="swiper-slide d-flex justify-content-center ">
+        <div class="box">
+          <img src="images/pack-3 (1).webp"  alt="">
+          <div class="text-box">
+              <p class="head" id="yellow">باقة <br> الاٍفطار</p>
+              <div class="inner-box d-flex flex-nowrap justify-content-between gap-5 ">
+                  <ul class="list-unstyled text-end p-0">
+                      <h6>المدة</h6>
+                      <li class="fw-bold ">5 أيام</li>
+                      <li class="fw-bold ">6 أيام</li>
+                      <li class="fw-bold ">20 يوم</li>
+                      <li class="fw-bold ">26 يوم</li>
+                  </ul>
+                  <ul class="list-unstyled text-start p-0 price">
+                      <h6>السعر</h6>
+                      <li class="fw-bold ">69</li>
+                      <li class="fw-bold ">79</li>
+                      <li class="fw-bold ">259</li>
+                      <li class="fw-bold ">329</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="info-box">
+              <ul class="list-unstyled p-0 ">
+
+                  <li class="pe-5" data="محتويات الباقة">
+                    جميع الأطباق <br>
+                    &nbsp
+                  </li>
+                  
+                  <li class="pe-5" data="لا تشمل">الأسعار لا تشمل التوصيل</li>
+              </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+                <div class="swiper-button-next" id="icon"></div>
+                <div class="swiper-button-prev" id="icon"></div>
+                <div class="swiper-pagination" id="icon"></div>
+  </div>
+  <div class="container packages swiper mySwiper tab-content" id="tab5">
+   
+    <div class="swiper-wrapper">
+      <div class="swiper-slide d-flex justify-content-center ">
+        <div class="box">
+          <img src="images/pack-6 (1).webp"  alt="" style="height: 700px;">
+          <div class="text-box" style=" width: max-content;">
+              <div class="head d-flex justify-content-around flex-column "id="yellow">
+               <div class="txt-box d-flex justify-content-around">
+                <p class="text-end">نوع الاضافة</p>
+                <p class="text-start ">السعر</p>
+            </div> 
+                <ul class="list-unstyled d-flex justify-content-end  " style="    gap: 27px;">
+                    <li></li>
+                    <li class="fs-6 ">26 يوم</li>
+                    <li class="fs-6 ">20 يوم</li>
+                    <li class="fs-6 ">6 أيام</li>
+                    <li class="fs-6 ">5 أيام</li>
+                </ul>
+              </div>
+              <div class="inner-box d-flex flex-nowrap justify-content-between gap-4 ">
+                  <ul class="list-unstyled text-end p-0">
+                      <li class="">سلطة</li>
+                      <li class="">سناك </li>
+                      <li class="">مشروب غازي</li>
+                      <li class="">توصيل</li>
+
+                  </ul>
+                  <ul class="list-unstyled text-start p-0 price">
+                      <li>250</li>
+                      <li class="">250</li>
+                      <li class="">78</li>
+                      <li class="">200</li>
+                  </ul>
+                  <ul class="list-unstyled text-start p-0 price">
+                    <li class="ltr">--</li>
+                    <li class="ltr">--</li>
+                    <li>60</li>
+                    <li>200</li>                               
+                  </ul>
+                  <ul class="list-unstyled text-start p-0 price">
+                    <li >60</li>
+                    <li>60</li>
+                    <li>18</li>
+                    <li>60</li>                               
+                  </ul>
+                  <ul class="list-unstyled text-start p-0 price">
+                    <li class="ltr">--</li>
+                    <li class="ltr">--</li>
+                    <li>15</li>
+                    <li>60</li>                               
+                  </ul>
+              </div>
+          </div>                     
+        </div>
+        
+      </div>
+    </div>
+                <div class="swiper-button-next" id="icon"></div>
+                <div class="swiper-button-prev" id="icon"></div>
+                <div class="swiper-pagination" id="icon"></div>
+  </div>
+ <a href="https://api.whatsapp.com/send?phone=966507001669" class="text-decoration-none "> <h1 class="text-center py-3" style="color: var(--red-color);">
+  اشترك الآن !
+</h1></a>
+
+<footer>
+  <div class="container text-center text-lg-end ">
+    <div class="row">
+      <div class="col-lg-3">
+        <ul class="list-unstyled p-0">
+          <li class="mb-3">
+            <a href="index.html" class="text-decoration-none ">الرئيسية</a>
+          </li>
+         
+                   
+          <li class="mb-3">
+            <a href="menu.html" class="text-decoration-none   ">قائمة الطعام</a>
+          </li>
+          <li class="mb-3">
+            <a href="packages.html" class="text-decoration-none  ">الباقات</a>
+          </li>
+          <li class="mb-3">
+            <a href="faq.html" class="text-decoration-none  ">الأسئلة الشائعة</a>
+          </li>  
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <ul class="list-unstyled p-0 ">
+          <h5>فروعنا</h5>
+          <li class="mb-2">
+            <a href="https://maps.app.goo.gl/pXKrFwQfp4DAg8se7" target="_blank" class="   "><img src="" width="40" alt="" >فرع البغدادية الغربية – جدة </a>
+          </li>
+          <li class="mb-2" style="margin-left: 50px;">
+            <a href="https://maps.app.goo.gl/3wjPWbggeqQKvLdAA" target="_blank" class=" "><img src="" width="40" alt="" >فرع المحمدية – جدة </a>
+          </li>
+          <li> السبت إلى الخميس <br> 12 ظهرا حتى 12 
+            مساء</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+       <p> مطعم بي سانوس للوجبات الصحية <br>
+        شارع حائل مدينة جدة <br>
+         المملكة العربية السعودية<br>
+         <br>00966507001669
+        <br>info@besanus-sa.com <br>
+       </p>
+      </div>
+      <div class="col-lg-3">
+        <div class="logo-holder text-center mb-3 pe-4">
+          <img src="images/logo-1.png" width="180" alt="">
+        </div>
+        <ul class="list-unstyled d-flex justify-content-center align-items-center ">
+          <li class="mb-3 ms-4"><a href="https://instagram.com/besanus"><img src="images/instagram.png" width="28" alt=""></a></li>
+            <li class="mb-3 ms-4"><a href="https://x.com/be_sanus"><img src="images/twitter.png" width="28" alt=""></a></li>
+            <li class="mb-3 ms-4"><a href="https://www.tiktok.com/@besanus"><img src="images/tik-tok.png" width="28" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1, // Default slides per view
+          spaceBetween: 30,
+          grabCursor: true,
+          navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          
+        },
+        
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            576: {
+              slidesPerView: 1, // Two slides per view for sm screen
+            },
+            768: {
+              slidesPerView: 1, // Three slides per view for md screen
+            },
+            992: {
+              slidesPerView:1, // Four slides per view for lg screen
+            },
+          },
+        });
+      </script>
+     <script>
+      // Function to show/hide tabs
+      function showTab(tabId, button) {
+        // Hide all tabs
+        var tabs = document.getElementsByClassName('tab-content');
+        for (var i = 0; i < tabs.length; i++) {
+          tabs[i].style.display = 'none';
+        }
+    
+        // Deactivate all tab buttons
+        var tabButtons = document.querySelectorAll('.tabs button');
+        for (var i = 0; i < tabButtons.length; i++) {
+          tabButtons[i].classList.remove('active-button');
+          tabButtons[i].classList.add('butt');
+          
+          
+        }
+    
+        // Show the selected tab and activate its button
+        document.getElementById(tabId).style.display = 'flex';
+        button.classList.remove('butt');
+        button.classList.add('active-button');
+        
+      }
+    
+      // Show the default tab on page load
+      // Note: The first button is manually assigned the 'active-button' class for the default state
+      // This is to ensure that the default button has the correct style even before it is clicked
+      // The class is also added to the corresponding tab content
+      showTab('tab1', document.querySelector('.tabs button.active-button'));
+    </script>
+</body>
+</html>
